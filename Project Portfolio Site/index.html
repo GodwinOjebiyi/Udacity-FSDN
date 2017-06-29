@@ -1,107 +1,84 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Project Portfolio</title>
-
-	<!-- Stylesheets -->
-	<link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-	<link href="assets/css/style.css" type="text/css" rel="stylesheet">
-
-	<!-- Fonts -->
-	<link href="assets/fonts/Lato-Regular.ttf" type="text/css" rel="stylesheet">
-</head>
-<body>
-	<div class="container">
-		<!-- Sidebar Start -->
-		<div class="col-md-2 sidebar">
-			<!-- Color Box Start -->
-			<div class="box">
-				<div class="box-color first-box"></div>
-				<p class="box-color-code">#02b3e4</p>
-			</div>
-			<!-- Color Box Ends -->
-			<!-- Color Box Start -->
-			<div class="box">
-				<div class="box-color second-box"></div>
-				<p class="box-color-code">#2d3c49</p>
-			</div>
-			<!-- Color Box Start -->
-			<!-- Color Box Ends -->
-			<div class="box">
-				<div class="box-color third-box"></div>
-				<p class="box-color-code">#7d97ad</p>
-			</div>
-			<!-- Color Box Ends -->
-		</div>
-		<!-- Sidebar Ends -->
-		<!-- Right Content Begins -->
-		<div class="col-md-10 right-content">
-			<header>
-				<div class="logo">
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Setting ViewPort -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Site Title -->
+		<title>My Portfolio</title>
+		<!-- Stylesheets -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,500' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<!-- Main Container Starts -->
+		<div class="container">
+			<!-- Header Starts -->
+			<div class="row">
+				<div class="col-md-6 col-xs-4">
 					<!-- Logo Image -->
-					<img src="assets/img/logo.png" class="logo-image" alt="Site Logo">
+					<img class="title-logo" src="images/logo.png" alt="Udacity Logo">
 				</div>
-				<!-- Right User Data Start -->
-				<div class="user-data">
-					<h1 class="user-name">Jane Doette</h1>
-					<p class="user-title">Front-End Ninja</p>
+				<div class="col-md-6 col-xs-8 text-right text-uppercase">
+					<!-- Name -->
+					<h1 class="user-name text-thin">Jane Doette</h1>
+					<!-- Title-->
+					<h4 class="user-title">Front-end Ninja</h4>
 				</div>
-				<!-- Right User Data Ends -->				
-			</header>
-			<section class="main">				
-				<section class="banner">
-
-					<!-- Banner Image -->
-					<img src="assets/img/banner.png" class="img-responsive" alt="Main Banner">
-				</section>
-				<!-- Featured Works Section Start -->
-				<section class="featured-work">
-					<h2 class="featured-works-title">Featured Works</h2>
-					<!-- Featured Works Row Start -->
-					<div class="row works">
-						<div class="col-md-4 work">
-							<!-- Featured Works Image -->
-							<img src="assets/img/works/work1.png" class="img-responsive work-image" alt="Main Banner">
-							<!-- Featured Works Title -->
-							<h3 class="work-title text-center">Work Title</h3>
-							<!-- Featured Works URL -->
-							<p class="work-url text-center">https://www.dummyurl.com/Work1</p>
-						</div>
-						<div class="col-md-4 work">
-							<!-- Featured Works Image -->
-							<img src="assets/img/works/work2.png" class="img-responsive work-image" alt="Main Banner">
-							<!-- Featured Works Title -->
-							<h3 class="work-title text-center">Work Title</h3>
-							<!-- Featured Works URL -->
-							<p class="work-url text-center">https://www.dummyurl.com/Work1</p>
-						</div>
-						<div class="col-md-4 work">
-							<!-- Featured Works Image -->
-							<img src="assets/img/works/work3.png" class="img-responsive work-image" alt="Main Banner">
-							<!-- Featured Works Title -->
-							<h3 class="work-title text-center">Work Title</h3>
-							<!-- Featured Works URL -->
-							<p class="work-url text-center">https://www.dummyurl.com/Work1</p>
-						</div>
-					</div>
-					<!-- Featured Works Row End -->
-				</section>
-				<!-- Featured Works Section End -->
 			</div>
-			<!-- Right Content Ends -->
-			<!-- Footer Starts -->
-			<footer>
-				<p>&copy; Udacity FSDN</p>
-			</footer>
-			<!-- Footer Ends -->
-		</section>
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.min.js"></script>
-</body>
+			<!-- Header Ends -->
+			<!-- HR line Starts -->
+			<div class="row">
+				<div class="col-md-12">
+					<hr class="hr">
+				</div>
+			</div>
+			<!-- HR line Ends -->
+			<!-- Banner Starts -->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Banner Image -->
+					<img class="img-responsive" src="images/main.png" alt="Big Banner">
+				</div>
+			</div>
+			<!-- Banner Ends -->
+			<!-- Featured Works Row Title Starts -->
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="featured-work-title">Featured Work</h2>
+				</div>
+			</div>
+			<!-- Featured Works Row Title Ends -->
+			<!-- Work Row Starts -->
+			<div class="row text-center">
+				<!-- Single Work Starts -->
+				<div class="col-md-4">
+					<a href="https://github.com/udacity/appify"> <img class="img-responsive" src="images/appify.png" alt="Appify Picture"></a>
+					<h3 class="text-uppercase project-desc-title">Appify</h3>
+					<a href="https://github.com/udacity/appify" class="text-link">https://github.com/udacity/Appify/</a>
+				</div>
+				<!-- Single Work Ends -->
+				<!-- Single Work Starts -->
+				<div class="col-md-4">
+					<a href="https://github.com/udacity/sunflower"> <img class="img-responsive" src="images/sunflower.png" alt="Sunflower Picture"></a>
+					<h3 class="text-uppercase project-desc-title">Sunflower</h3>
+					<a href="https://github.com/udacity/Sunflower" class="text-link">https://github.com/udacity/Sunflower/</a>
+				</div>
+				<!-- Single Work Ends -->
+				<!-- Single Work Starts -->
+				<div class="col-md-4">
+					<a href="https://github.com/udacity/bokeh"> <img class="img-responsive" src="images/bokeh.png" alt="Bokeh Picture"></a>
+					<h3 class="text-uppercase project-desc-title">Bokeh</h3>
+					<a href="https://github.com/udacity/Bokeh" class="text-link">https://github.com/udacity/Bokeh/</a>
+				</div>
+				<!-- Single Work Ends -->
+			</div>
+			<!-- Work Row Ends -->
+		</div>
+		<!-- Main Container Ends -->
+		<!-- Javascript Files -->
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</body>
 </html>

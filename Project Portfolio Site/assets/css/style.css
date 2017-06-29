@@ -1,32 +1,19 @@
-html, body{
-    font-size: 100%;
-	font-family: 'Lato', sans-serif;
-	background:#ffffff;
-	margin: 10px 50px;
-}
+html, body{font-size: 100%;font-family: 'Lato', sans-serif;background:#ffffff;margin: 1% 2%;}
+
 header{clear:both;}
 
 .logo{float:left;}
 .logo-image{width: 80px; height: 80px}
-.user-data{float:right;}
 
-.sidebar{
-	margin-top: 120px;
-}
+
 .banner{margin-top:120px;}
 
+.user-data{float:right;}
 .user-data .user-name{float:right; font-size: 40px; text-transform: uppercase;}
 .user-data .user-title{float:right; text-transform: uppercase; position: absolute; top:61px; right:15px;}
 
-.separator{
-
-}
-
-.sidebar .box .box-color{
-	width: 80px;
-	height: 80px;
-	margin-left: 20px;
-}
+.sidebar{margin-top: 120px;}
+.sidebar .box .box-color{width: 80px;height: 80px;margin-left: 20px;}
 
 .first-box{ background-color: #02b3e4 }
 .second-box{ background-color: #2d3c49 }

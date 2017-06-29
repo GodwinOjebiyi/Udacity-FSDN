@@ -1,0 +1,70 @@
+/*css general */
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+	color: #2d3c49;
+}
+
+body a:hover{
+	text-decoration: none;
+}
+
+/*css for other texts */
+.text-thin {
+	font-weight: 100;
+}
+
+.featured-work-title {
+	color: #7d97ad;
+	font-weight:400;
+	font-size: 38px;
+	margin-top: 1em;
+}
+
+.text-link {
+	font-size: 14px;
+	padding: 1em;
+	font-weight: bold;
+}
+
+
+.user-name {
+	font-size: 60px
+}
+
+.project-desc-title {
+	font-size: 38px;
+	font-weight: 400;
+}
+
+.user-title {
+	font-weight: 300;
+	font-size: 22px;
+}
+
+/*css for images */
+.title-logo {
+	margin-top: 1.5em;
+}
+
+/*css for other elements */
+
+hr {
+    border: none;
+    height: 5px;
+    color: #BCBBBB; /* old IE */
+    background-color: #BCBBBB; /* Modern Browsers */
+    margin-top: 0.2em;
+    margin-bottom: 2.2em;
+}
+
+/*Screen Hack for Iphone 5 and phones with low screen width */
+@media only screen and (max-width: 350px){
+	.user-name {
+		font-size: 40px;
+	}
+	.user-title {
+		font-weight: 300;
+		font-size: 16px;
+	}
+}
