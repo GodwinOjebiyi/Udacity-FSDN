@@ -5,7 +5,7 @@ body {
 	color: #2d3c49;
 }
 
-body a:hover{
+body a:hover {
 	text-decoration: none;
 }
 
@@ -29,7 +29,7 @@ body a:hover{
 
 
 .user-name {
-	font-size: 60px
+	font-size: 60px;
 }
 
 .project-desc-title {
