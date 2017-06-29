@@ -58,6 +58,12 @@ hr {
     margin-bottom: 2.2em;
 }
 
+footer p{
+	text-align: center;
+	margin-top: 20px;
+	font-weight: 300;
+}
+
 /*Screen Hack for Iphone 5 and phones with low screen width */
 @media only screen and (max-width: 350px){
 	.user-name {
