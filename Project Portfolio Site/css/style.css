@@ -1,6 +1,6 @@
 /*css general */
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: "Lato", sans-serif;
 	font-weight: 200;
 	color: #2d3c49;
 }
@@ -52,8 +52,8 @@ body a:hover{
 hr {
     border: none;
     height: 5px;
-    color: #BCBBBB; /* old IE */
-    background-color: #BCBBBB; /* Modern Browsers */
+    color: #bcbbbb; /* old IE */
+    background-color: #bcbbbb; /* Modern Browsers */
     margin-top: 0.2em;
     margin-bottom: 2.2em;
 }
