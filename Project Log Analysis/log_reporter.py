@@ -2,8 +2,9 @@
 
 from db import db_session_context
 
-#Name of database stored in a constant for easy referencing
+# Name of database stored in a constant for easy referencing
 DB_NAME = 'news'
+
 
 def show_popular_articles():
     # Find the three most popular articles of all time
@@ -55,22 +56,13 @@ def error_log_status():
     # Print days on which more than 1% of requests lead to errors
     with db_session_context(DB_NAME) as db:
         cursor = db.cursor()
-        # Query to create view
-        v_query = "create or replace view log_status as select Date,Total,Error,\
-        (Error::float*100)/Total::float as Percent from\
-        (select time::timestamp::date as Date, count(status) as Total,\
-        sum(case when status = '404 NOT FOUND' then 1 else 0 end) as Error\
-        from log group by time::timestamp::date) as result\
-        where (Error::float*100)/Total::float > 1.0 order by Percent desc;"
-        # Execute Query View
-        cursor.execute(v_query)
         # Query the view log status to get what we need
         query = "select * from log_status"
         cursor.execute(query)
         result = cursor.fetchall()
         print "\n\n-- Days with more than 1% of errors: --"
         for i in range(0, len(result), 1):
-            print str(result[i][0])+ " - "+str(round(result[i][3], 2))+"% errors"
+            print str(result[i][0]) + " - " +str(round(result[i][3], 2)) +"% errors"
 
 
 # Execute all methods
