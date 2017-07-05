@@ -62,7 +62,9 @@ def error_log_status():
         result = cursor.fetchall()
         print "\n\n-- Days with more than 1% of errors: --"
         for i in range(0, len(result), 1):
-            print str(result[i][0]) + " - " +str(round(result[i][3], 2)) +"% errors"
+            error_day = str(result[i][0])
+            error_percent = str(round(result[i][3], 2))
+            print error_day + " - " + error_percent + "% errors"
 
 
 # Execute all methods
